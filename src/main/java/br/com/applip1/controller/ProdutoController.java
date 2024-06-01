@@ -48,7 +48,7 @@ public class ProdutoController {
 		Produto produto = findById(id);
 		
 		if (produto == null) {
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Produto não encontrado.);
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Produto não encontrado.");
 		}
 		
 		return ResponseEntity

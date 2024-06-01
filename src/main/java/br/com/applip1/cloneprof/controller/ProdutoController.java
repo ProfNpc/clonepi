@@ -1,4 +1,4 @@
-package br.com.applip1.controller;
+package br.com.applip1.cloneprof.controller;
 
 import java.util.Iterator;
 import java.util.List;

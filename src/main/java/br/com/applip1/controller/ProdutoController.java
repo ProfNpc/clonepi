@@ -86,7 +86,7 @@ public class ProdutoController {
 	}
 	
 	@DeleteMapping("/produtos/{id}")
-	public apagarProduto(
+	public ResponseEntity<Object> apagarProduto(
 			@PathVariable(value = "id") Integer id) {
 		
 		Produto produtoApagado = procurarEApagar(id);

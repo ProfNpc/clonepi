@@ -105,7 +105,7 @@ public class ProdutoController {
 		Iterator<Produto> i = listaProdutos.iterator();
 		while(i.hasNext()) {
 			Produto p = i.next();
-			if (p.getId() = id) {
+			if (p.getId() == id) {
 				i.remove();
 				return p;
 			}

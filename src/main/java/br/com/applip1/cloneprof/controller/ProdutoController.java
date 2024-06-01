@@ -31,6 +31,7 @@ public class ProdutoController {
 				.body(listaProdutos); 
 	}
 	
+	//curl -v -X POST http://localhost:8080/produtos -H "Content-Type: application/json; Charset=utf-8" -d @produto-pao.json
 	@PostMapping("/produtos")
 	public ResponseEntity<Produto> novoProduto(@RequestBody Produto produto) {
 		
@@ -66,6 +67,7 @@ public class ProdutoController {
 		return null;
 	}
 	
+	//curl -v -X PUT http://localhost:8080/produtos/1 -H "Content-Type: application/json; Charset=utf-8" -d @produto-pao2.json
 	@PutMapping("/produtos/{id}")
 	public ResponseEntity<Object> atualizarProduto(
 			@PathVariable(value = "id") Integer id,

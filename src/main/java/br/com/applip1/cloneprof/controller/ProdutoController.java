@@ -1,5 +1,6 @@
 package br.com.applip1.cloneprof.controller;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -19,7 +20,7 @@ import br.com.applip1.cloneprof.model.Produto;
 @RestController
 public class ProdutoController {
 
-	private static List<Produto> listaProdutos;
+	private static List<Produto> listaProdutos = new ArrayList<Produto>();
 	
 	private static int proxId = 1;
 	

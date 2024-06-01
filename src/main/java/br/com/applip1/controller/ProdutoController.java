@@ -62,6 +62,7 @@ public class ProdutoController {
 				return p;
 			}
 		}
+		return null;
 	}
 	
 	@PutMapping("/produtos/{id}")

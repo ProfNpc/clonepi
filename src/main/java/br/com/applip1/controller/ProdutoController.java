@@ -30,7 +30,7 @@ public class ProdutoController {
 				.body(listaProdutos); 
 	}
 	
-	
+	@PostMapping("/produtos")
 	public ResponseEntity<Produto> novoProduto(@RequestBody Produto produto) {
 		
 		produto.setId(proxId++);

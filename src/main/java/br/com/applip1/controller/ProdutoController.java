@@ -28,7 +28,7 @@ public class ProdutoController {
 		return ResponseEntity
 				.status(HttpStatus.OK) 
 				.body(listaProdutos); 
-	
+	}
 	
 	
 	public ResponseEntity<Produto> novoProduto(@RequestBody Produto produto) {

@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.applip1.cloneprof.model.Produto;
 
+@RestController
 public class ProdutoController {
 
 	private static List<Produto> listaProdutos;

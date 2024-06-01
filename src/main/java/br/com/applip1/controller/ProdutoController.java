@@ -21,7 +21,7 @@ public class ProdutoController {
 
 	private static List<Produto> listaProdutos;
 	
-	private static int proxId = "1";
+	private static int proxId = 1;
 	
 	@GetMapping("/produtos")
 	public ResponseEntity<List<Produto>>  produtos() {

@@ -66,7 +66,7 @@ public class ProdutoController {
 	}
 	
 	@PutMapping("/produtos/{id}")
-	public Produto atualizarProduto(
+	public ResponseEntity<Object> atualizarProduto(
 			@PathVariable(value = "id") Integer id,
 			@RequestBody Produto produto) {
 		
